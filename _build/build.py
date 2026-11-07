@@ -146,8 +146,10 @@ main {{ padding-top: var(--nav-h); }}
 /* Footer */
 .foot {{ margin-top: var(--section-y); border-top: 1px solid var(--ligne); padding: 48px 0; font-size: 14px; color: var(--gris); }}
 .foot .container {{ display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; }}
-.foot .who {{ display: grid; gap: 10px; max-width: 560px; }}
-.foot .who img {{ width: 120px; }}
+.foot .who {{ display: grid; gap: 8px; max-width: 640px; }}
+.foot .who img {{ width: 120px; margin-bottom: 6px; }}
+.foot .nw {{ white-space: nowrap; }}
+.foot .fine {{ margin: 0; font-size: 11px; line-height: 16px; color: var(--gris-discret); }}
 .foot nav ul {{ list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px 24px; }}
 .foot a {{ color: var(--gris); text-decoration: none; }}
 
@@ -272,8 +274,8 @@ def page(name, title, desc, body, active=''):
   <div class="container">
     <div class="who">
       <img src="/assets/img/rezolq-logo.svg" alt="REZOLQ" width="120" height="16" loading="lazy">
-      <p>© 2026 {COMPANY}. REZOLQ is published by FOXTROTT SAS, share capital €1,000, Chemin Belvédère, Bois Thibault, 97234 Fort-de-France, Martinique, France · RCS Fort-de-France 890 758 436 · Tel. {PHONE_DISPLAY}</p>
-      <p>Apple, the Apple logo, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play and Android are trademarks of Google LLC.</p>
+      <p class="fine">© 2026 {COMPANY}. REZOLQ is published by FOXTROTT SAS, share capital €1,000, Chemin Belvédère, Bois Thibault, 97234 Fort-de-France, Martinique, France · RCS Fort-de-France 890 758 436 · <span class="nw">Tel. {PHONE_DISPLAY}</span></p>
+      <p class="fine">Apple, the Apple logo, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play and Android are trademarks of Google LLC.</p>
     </div>
     <nav aria-label="Legal"><ul><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Use</a></li><li><a href="/legal.html">Legal notice</a></li><li><a href="/support.html">Support</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li></ul></nav>
   </div>
