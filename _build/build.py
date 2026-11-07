@@ -14,7 +14,7 @@ T = json.loads((B / 'tokens.json').read_text(encoding='utf-8'))
 
 # ---- Settings -------------------------------------------------------------
 SITE = 'https://rezolq.com'
-EMAIL = 'pascal.mence@gmail.com'
+EMAIL = 'contact@rezolq.com'
 PHONE_DISPLAY, PHONE_LINK = '+596 696 23 34 43', '+596696233443'
 COMPANY = 'FOXTROTT SAS'
 TEMPORARY = False          # True adds noindex everywhere
