@@ -1,0 +1,4 @@
+Contact: mailto:pascal.mence@gmail.com
+Expires: 2027-11-06T23:00:00.000Z
+Preferred-Languages: en, fr, no
+Canonical: https://rezolq.com/.well-known/security.txt

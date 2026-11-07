@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Privacy Policy — REZOLQ</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="fonts/fonts.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="How the REZOLQ app and website handle data.">
 <link rel="canonical" href="https://rezolq.com/privacy.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#0A0B0F}
 a{color:#22D3EE}a:hover{color:#A5F3FC}
@@ -53,14 +54,14 @@ html{scroll-behavior:smooth}
   <main class="doc" style="max-width: 820px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 64px 32px 96px;">
     <p style="margin: 0 0 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #22D3EE;">Legal</p>
     <h1 style="margin: 0 0 8px; font-family: Unbounded, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1;">Privacy Policy</h1>
-    <p style="margin: 0 0 32px; font-size: 15px; color: #8B909C;">Last updated: [DATE] · Effective: [DATE] · Applies to the REZOLQ app for iOS and Android and to this website.</p>
+    <p style="margin: 0 0 32px; font-size: 15px; color: #8B909C;">Last updated: 7 November 2026 · Effective: 7 November 2026 · Applies to the REZOLQ app for iOS and Android and to this website.</p>
 
     <div style="padding: 20px 24px; border-radius: 12px; background: #12151C; border: 1px solid #1C2029; margin-bottom: 8px;">
       <p style="margin: 0; color: #F4F6FA;"><strong>In short:</strong> REZOLQ does not ask you to create an account and does not collect personal information. The app uses Bluetooth to detect beacons placed in the venue and to estimate your position in the crowd. That processing happens on your phone. We do not use advertising or third-party analytics SDKs, and we do not sell data.</p>
     </div>
 
     <h2>1. Who we are</h2>
-    <p>The REZOLQ app and this website are operated by <strong>[LEGAL ENTITY]</strong>, [LEGAL FORM], registered at [ADDRESS, CITY, COUNTRY], registration number [NUMBER] ("we", "us"). We are the data controller for any personal data described in this policy.</p>
+    <p>The REZOLQ app and this website are operated by <strong>Pascal Daniel Mence</strong>, a private individual based in Oslo, Norway ("we", "us"). REZOLQ is not yet a registered company, so there is no organisation number. We are the data controller for the personal data described in this policy.</p>
     <p>Contact for privacy matters: <a href="mailto:pascal.mence@gmail.com">pascal.mence@gmail.com</a>.</p>
 
     <h2>2. What the app does</h2>
@@ -73,7 +74,8 @@ html{scroll-behavior:smooth}
         <tr><td>Bluetooth signals from the venue's beacons (beacon name, signal strength, beacon-to-beacon distances)</td><td>To estimate your phone's position in the crowd so the correct pixel is shown</td><td>On your phone only</td><td>Not stored; discarded when the effect ends</td></tr>
         <tr><td>Your estimated position (a grid coordinate, not a GPS location)</td><td>To assign your screen a pixel of the picture</td><td>On your phone only — never transmitted</td><td>Not stored; discarded when the effect ends</td></tr>
         <tr><td>Effect cues received from the show controller</td><td>To change your screen colour in sync with the show</td><td>Received by your phone over the internet or local network</td><td>Not stored</td></tr>
-        <tr><td>Connection data (IP address, time of connection) when your phone receives effect cues</td><td>To deliver the cues to your phone</td><td>Our cue server, hosted by [HOSTING PROVIDER, COUNTRY]</td><td>Server logs deleted after [N] days</td></tr>
+        <tr><td>Connection data (IP address, time of connection) when your phone receives effect cues</td><td>To deliver the cues to your phone</td><td>Our cue server. The hosting provider will be named here before the app is released.</td><td>Server logs deleted after 30 days</td></tr>
+        <tr><td>Visits to this website: IP address, time, page requested, browser type</td><td>To deliver the website and protect it against abuse</td><td>GitHub Pages, operated by GitHub, Inc. (United States). GitHub logs the IP address of every visitor for security purposes.</td><td>As set out in the GitHub Privacy Statement</td></tr>
         <tr><td>Basic technical data (app version, operating system, crash reports)</td><td>To keep the app working and fix bugs</td><td>Apple / Google platform crash reporting, only if you have enabled sharing with app developers in your device settings</td><td>As provided by Apple / Google</td></tr>
       </tbody>
     </table>
@@ -87,10 +89,10 @@ html{scroll-behavior:smooth}
     </ul>
 
     <h2>5. Legal basis (EU/EEA users)</h2>
-    <p>Where the GDPR applies, we process the technical data above on the basis of our legitimate interest in running the light show you have chosen to take part in (Art. 6(1)(f) GDPR). Bluetooth scanning only starts after you grant the permission on your device.</p>
+    <p>Where the GDPR applies, we process the technical data above on the basis of our legitimate interests (Art. 6(1)(f) GDPR): running the light show you have chosen to take part in, and keeping this website and the cue server secure and available. You can ask us for our assessment of these interests at any time. Bluetooth scanning only starts after you grant the permission on your device.</p>
 
     <h2>6. Sharing</h2>
-    <p>We do not sell or rent data. We do not share data with advertisers or data brokers. Your position in the crowd never leaves your phone, so neither we nor the event organiser receive it. Our hosting provider [HOSTING PROVIDER] processes connection data on our behalf under a data-processing agreement, with protection equal to this policy. This website loads fonts from Google Fonts (Google LLC), which receives your IP address when you visit. Apple and Google may process crash and diagnostic data under their own privacy policies if you have enabled that on your device.</p>
+    <p>We do not sell or rent data. We do not share data with advertisers or data brokers. Your position in the crowd never leaves your phone, so neither we nor the event organiser receive it. This website is hosted on GitHub Pages by GitHub, Inc. in the United States, which receives the IP address of every visitor. GitHub states in its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a> that it takes part in the EU-US Data Privacy Framework and relies on the European Commission's standard contractual clauses (Decision 2021/914) for transfers from the EEA. The website loads no other third-party resources: fonts are hosted on rezolq.com itself, and there are no cookies, analytics or advertising tags. Apple and Google may process crash and diagnostic data under their own privacy policies if you have enabled that on your device.</p>
 
     <h2>7. Retention</h2>
     <p>Beacon signals and your estimated position exist only while an effect is running and are discarded afterwards. We keep no database of participants.</p>
@@ -111,12 +113,12 @@ html{scroll-behavior:smooth}
     <p>If the app starts processing new categories of data, we will update this page, change the date at the top, and update the privacy details shown on the App Store and Google Play before the change takes effect.</p>
 
     <h2>13. Contact</h2>
-    <p>[LEGAL ENTITY] · [ADDRESS, CITY, COUNTRY] · <a href="mailto:pascal.mence@gmail.com">pascal.mence@gmail.com</a></p>
+    <p>Pascal Daniel Mence · Oslo, Norway · <a href="mailto:pascal.mence@gmail.com">pascal.mence@gmail.com</a></p>
   </main>
 
   <footer class="foot" style="border-top: 1px solid #1C2029; margin-top: auto;">
     <div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #A3A8B5;">
-      <span>© 2026 [LEGAL ENTITY]</span>
+      <span>© 2026 Pascal Daniel Mence</span>
       <nav aria-label="Legal" style="display: flex; flex-wrap: wrap; gap: 24px;"><a href="/">Home</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav>
     </div>
   </footer>
