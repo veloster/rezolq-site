@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>REZOLQ — Every phone in the crowd becomes one pixel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="REZOLQ turns an audience into a live light display. Free app for iPhone and Android, no account, automatic placement with Bluetooth beacons.">
+<link rel="canonical" href="https://rezolq.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0B0F}
+a{color:#22D3EE}a:hover{color:#A5F3FC}
+.nav a{color:#C9CDD6;text-decoration:none}.nav a:hover{color:#FFFFFF}
+.btn-primary{color:#0A0B0F;text-decoration:none}.btn-primary:hover{color:#0A0B0F;filter:brightness(1.12)}
+.btn-ghost{color:#F4F6FA;text-decoration:none;border:1px solid #2A2F3A}.btn-ghost:hover{color:#F4F6FA;border-color:#6B7280}
+.foot a{color:#A3A8B5;text-decoration:none}.foot a:hover{color:#FFFFFF}
+</style>
+
+<style>
+html{scroll-behavior:smooth}
+@media (max-width: 900px){
+  .g4{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .g3,.g2{grid-template-columns:repeat(1,minmax(0,1fr)) !important}
+  h1{font-size:40px !important}
+  h2{font-size:30px !important}
+  header,section,main,footer>div{padding-left:16px !important;padding-right:16px !important}
+  .doc table{display:block;overflow-x:auto}
+}
+@media (max-width: 520px){
+  .g4{grid-template-columns:repeat(1,minmax(0,1fr)) !important}
+  h1{font-size:34px !important}
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; box-sizing: border-box; background: #0A0B0F; color: #F4F6FA; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.55; display: flex; flex-direction: column;">
+
+  <!-- NAV -->
+  <header style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 32px; max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box;">
+    <a href="#top" style="font-family: Unbounded, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.18em; color: #F4F6FA; text-decoration: none;">REZOLQ</a>
+    <nav class="nav" aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; font-weight: 500;">
+      <a href="#how">How it works</a>
+      <a href="#organisers">For organisers</a>
+      <a href="#privacy">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a class="btn-primary" href="#download" style="background: #22D3EE; display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 8px; font-weight: 600; font-size: 15px;">Get the app</a>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="position: relative; max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 72px 32px 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px;">
+    <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #22D3EE;">Crowd light show · iOS &amp; Android</p>
+      <h1 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 800; font-size: 60px; line-height: 1.04; letter-spacing: -0.01em;">Every phone in the crowd becomes one pixel.</h1>
+      <p style="margin: 0; font-size: 20px; color: #C9CDD6; max-width: 560px;">REZOLQ turns an audience into a live display. Shapes, waves and partner logos move across thousands of screens — and every phone finds its own place automatically. No seat to pick, no section to choose.</p>
+      <div id="download" style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px;">
+        <a class="btn-primary" href="#" aria-label="REZOLQ for iPhone, coming soon to the App Store" style="background: #22D3EE; display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; font-weight: 600; font-size: 16px;">iPhone · coming soon</a>
+        <a class="btn-ghost" href="#" aria-label="REZOLQ for Android, coming soon to Google Play" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; font-weight: 600; font-size: 16px;">Android · coming soon</a>
+      </div>
+      <p style="margin: 0; font-size: 14px; color: #8B909C;">Free. No account. Uses Bluetooth and battery only while the app is open during an effect.</p>
+    </div>
+
+    <div style="flex: 1 1 440px; min-width: 0; display: flex; justify-content: center;">
+      <svg viewBox="0 0 520 400" width="100%" style="max-width: 520px; height: auto; display: block;" role="img" aria-label="A grid of phone screens in a crowd; lit screens form a wave shape">
+        <defs>
+          <pattern id="rq-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="2" y="2" width="16" height="16" rx="2" fill="#171A22"></rect>
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="520" height="400" fill="url(#rq-grid)"></rect>
+        <g fill="#22D3EE">
+          <rect x="22" y="222" width="16" height="16" rx="2"></rect><rect x="42" y="202" width="16" height="16" rx="2"></rect><rect x="62" y="182" width="16" height="16" rx="2"></rect><rect x="82" y="162" width="16" height="16" rx="2"></rect><rect x="102" y="142" width="16" height="16" rx="2"></rect><rect x="122" y="122" width="16" height="16" rx="2"></rect><rect x="142" y="102" width="16" height="16" rx="2"></rect><rect x="162" y="82" width="16" height="16" rx="2"></rect><rect x="182" y="82" width="16" height="16" rx="2"></rect><rect x="202" y="102" width="16" height="16" rx="2"></rect><rect x="222" y="122" width="16" height="16" rx="2"></rect><rect x="242" y="142" width="16" height="16" rx="2"></rect><rect x="262" y="162" width="16" height="16" rx="2"></rect><rect x="282" y="182" width="16" height="16" rx="2"></rect><rect x="302" y="202" width="16" height="16" rx="2"></rect><rect x="322" y="222" width="16" height="16" rx="2"></rect><rect x="342" y="202" width="16" height="16" rx="2"></rect><rect x="362" y="182" width="16" height="16" rx="2"></rect><rect x="382" y="162" width="16" height="16" rx="2"></rect><rect x="402" y="142" width="16" height="16" rx="2"></rect><rect x="422" y="122" width="16" height="16" rx="2"></rect><rect x="442" y="102" width="16" height="16" rx="2"></rect><rect x="462" y="82" width="16" height="16" rx="2"></rect><rect x="482" y="82" width="16" height="16" rx="2"></rect>
+        </g>
+        <g fill="#C6F135">
+          <rect x="42" y="262" width="16" height="16" rx="2"></rect><rect x="62" y="242" width="16" height="16" rx="2"></rect><rect x="82" y="222" width="16" height="16" rx="2"></rect><rect x="102" y="202" width="16" height="16" rx="2"></rect><rect x="122" y="182" width="16" height="16" rx="2"></rect><rect x="142" y="162" width="16" height="16" rx="2"></rect><rect x="162" y="142" width="16" height="16" rx="2"></rect><rect x="182" y="142" width="16" height="16" rx="2"></rect><rect x="202" y="162" width="16" height="16" rx="2"></rect><rect x="222" y="182" width="16" height="16" rx="2"></rect><rect x="242" y="202" width="16" height="16" rx="2"></rect><rect x="262" y="222" width="16" height="16" rx="2"></rect><rect x="282" y="242" width="16" height="16" rx="2"></rect><rect x="302" y="262" width="16" height="16" rx="2"></rect><rect x="322" y="282" width="16" height="16" rx="2"></rect><rect x="342" y="262" width="16" height="16" rx="2"></rect><rect x="362" y="242" width="16" height="16" rx="2"></rect><rect x="382" y="222" width="16" height="16" rx="2"></rect><rect x="402" y="202" width="16" height="16" rx="2"></rect><rect x="422" y="182" width="16" height="16" rx="2"></rect><rect x="442" y="162" width="16" height="16" rx="2"></rect><rect x="462" y="142" width="16" height="16" rx="2"></rect><rect x="482" y="142" width="16" height="16" rx="2"></rect>
+        </g>
+        <g fill="#F4F6FA">
+          <rect x="22" y="342" width="16" height="16" rx="2"></rect><rect x="82" y="362" width="16" height="16" rx="2"></rect><rect x="162" y="322" width="16" height="16" rx="2"></rect><rect x="262" y="362" width="16" height="16" rx="2"></rect><rect x="342" y="342" width="16" height="16" rx="2"></rect><rect x="442" y="362" width="16" height="16" rx="2"></rect><rect x="482" y="302" width="16" height="16" rx="2"></rect>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PROOF STRIP -->
+  <section aria-label="Key facts" style="border-top: 1px solid #1C2029; border-bottom: 1px solid #1C2029;">
+    <div class="g4" style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 28px 32px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 26px; color: #22D3EE;">0</span><span style="font-size: 14px; color: #A3A8B5;">sections to choose — placement is automatic</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 26px; color: #22D3EE;">6</span><span style="font-size: 14px; color: #A3A8B5;">beacons max per event</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 26px; color: #22D3EE;">100 m+</span><span style="font-size: 14px; color: #A3A8B5;">crowd width covered, outdoors or indoors</span></div>
+      <div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 26px; color: #22D3EE;">2</span><span style="font-size: 14px; color: #A3A8B5;">platforms: iOS and Android, same experience</span></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 96px 32px 72px; display: flex; flex-direction: column; gap: 40px;">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px;">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #22D3EE;">For the audience</p>
+      <h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 38px; line-height: 1.12;">Three steps. Thirty seconds.</h2>
+    </div>
+    <div class="g3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 14px; background: #12151C; border: 1px solid #1C2029;">
+        <span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 14px; color: #C6F135;">01</span>
+        <h3 style="margin: 0; font-size: 21px; font-weight: 600;">Download REZOLQ</h3>
+        <p style="margin: 0; color: #A3A8B5;">Free for iPhone and Android. No account, no sign-up, no personal details asked.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 14px; background: #12151C; border: 1px solid #1C2029;">
+        <span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 14px; color: #C6F135;">02</span>
+        <h3 style="margin: 0; font-size: 21px; font-weight: 600;">Open it when the show asks</h3>
+        <p style="margin: 0; color: #A3A8B5;">Allow Bluetooth once. Your phone listens for the venue's beacons and works out where you are standing — by itself.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 14px; background: #12151C; border: 1px solid #1C2029;">
+        <span style="font-family: Unbounded, sans-serif; font-weight: 700; font-size: 14px; color: #C6F135;">03</span>
+        <h3 style="margin: 0; font-size: 21px; font-weight: 600;">Hold it up</h3>
+        <p style="margin: 0; color: #A3A8B5;">Your screen lights up as one pixel of the picture. Waves, logos and colours sweep across the whole crowd in sync with the stage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY DIFFERENT -->
+  <section style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 24px 32px 96px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start;">
+    <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #22D3EE;">What makes it different</p>
+      <h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 38px; line-height: 1.12;">Nobody picks a section. The crowd maps itself.</h2>
+      <p style="margin: 0; color: #C9CDD6; font-size: 18px;">Other crowd-light apps ask each person to tap the block they are sitting in. Get it wrong and the picture breaks. REZOLQ places professional Bluetooth beacons around the venue; the beacons measure their own distances with ultra-wideband, and every phone locates itself against them. The result is a precise map of the crowd — and pictures that actually look like pictures.</p>
+    </div>
+    <ul class="g2" style="flex: 1 1 400px; min-width: 0; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
+      <li style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 12px; background: #12151C; border: 1px solid #1C2029;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M5.6 5.6a9 9 0 0 1 12.8 0M3 3a12.7 12.7 0 0 1 18 0M8.5 8.5a5 5 0 0 1 7 0"></path></svg>
+        <strong style="font-size: 17px;">Automatic placement</strong>
+        <span style="font-size: 15px; color: #A3A8B5;">Bluetooth beacons, no manual input from the audience.</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 12px; background: #12151C; border: 1px solid #1C2029;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>
+        <strong style="font-size: 17px;">Real shapes</strong>
+        <span style="font-size: 15px; color: #A3A8B5;">Logos, text and animations readable from the stage and on camera.</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 12px; background: #12151C; border: 1px solid #1C2029;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="18" height="10" rx="2"></rect><path d="M22 11v2M6 11v2M10 11v2"></path></svg>
+        <strong style="font-size: 17px;">Battery-friendly</strong>
+        <span style="font-size: 15px; color: #A3A8B5;">The app only runs during an effect, not for the whole evening.</span>
+      </li>
+      <li style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 12px; background: #12151C; border: 1px solid #1C2029;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <strong style="font-size: 17px;">Private by design</strong>
+        <span style="font-size: 15px; color: #A3A8B5;">No account, no tracking, no data sold. Bluetooth is used for positioning only.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FOR ORGANISERS -->
+  <section id="organisers" style="background: #12151C; border-top: 1px solid #1C2029; border-bottom: 1px solid #1C2029;">
+    <div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 96px 32px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start;">
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+        <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #C6F135;">For organisers &amp; show designers</p>
+        <h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 38px; line-height: 1.12;">Six beacons. One field. The whole crowd.</h2>
+        <p style="margin: 0; color: #C9CDD6; font-size: 18px;">A REZOLQ installation is deliberately light: a handful of waterproof beacons on stands around the pit, measured against each other automatically. No cameras pointed at the audience, no grid of hardware to maintain. Effects are designed alongside your stage visuals, so LED walls, totems and the crowd move as one picture.</p>
+        <a class="btn-primary" href="support.html" style="background: #22D3EE; display: inline-flex; align-self: flex-start; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 10px; font-weight: 600; font-size: 15px; margin-top: 8px;">Talk to us about your event</a>
+      </div>
+      <dl class="g2" style="flex: 1 1 400px; min-width: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px; border-radius: 12px; background: #0A0B0F; border: 1px solid #1C2029;"><dt style="font-size: 14px; color: #A3A8B5;">Beacons per event</dt><dd style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 22px;">Up to 6</dd></div>
+        <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px; border-radius: 12px; background: #0A0B0F; border: 1px solid #1C2029;"><dt style="font-size: 14px; color: #A3A8B5;">Crowd width</dt><dd style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 22px;">100 m+ each side</dd></div>
+        <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px; border-radius: 12px; background: #0A0B0F; border: 1px solid #1C2029;"><dt style="font-size: 14px; color: #A3A8B5;">Hardware</dt><dd style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 22px;">IP67, outdoor-rated</dd></div>
+        <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px; border-radius: 12px; background: #0A0B0F; border: 1px solid #1C2029;"><dt style="font-size: 14px; color: #A3A8B5;">Beacon-to-beacon ranging</dt><dd style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 22px;">UWB, ±0.3 m</dd></div>
+        <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px; border-radius: 12px; background: #0A0B0F; border: 1px solid #1C2029;"><dt style="font-size: 14px; color: #A3A8B5;">Audience phones</dt><dd style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 22px;">Bluetooth only</dd></div>
+        <div style="display: flex; flex-direction: column; gap: 6px; padding: 22px; border-radius: 12px; background: #0A0B0F; border: 1px solid #1C2029;"><dt style="font-size: 14px; color: #A3A8B5;">Stage integration</dt><dd style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 22px;">Video-mapping sync</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- PRIVACY AT A GLANCE -->
+  <section id="privacy" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 96px 32px; display: flex; flex-direction: column; gap: 32px;">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px;">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #22D3EE;">Privacy at a glance</p>
+      <h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 38px; line-height: 1.12;">What the app uses, and what it never does.</h2>
+      <p style="margin: 0; color: #C9CDD6;">The full text is in the <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+    <div class="g2" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 14px; border: 1px solid #1C2029; background: #12151C;">
+        <h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #22D3EE;">Uses</h3>
+        <ul style="margin: 0; padding-left: 20px; color: #C9CDD6; display: flex; flex-direction: column; gap: 8px;">
+          <li><strong style="color: #F4F6FA;">Bluetooth</strong> — to detect the venue's beacons and estimate where your phone is in the crowd. Processed on your phone.</li>
+          <li><strong style="color: #F4F6FA;">Screen &amp; brightness</strong> — to show colours during an effect.</li>
+          <li><strong style="color: #F4F6FA;">Internet (during a show)</strong> — to receive the effect cues from the show controller.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 14px; border: 1px solid #1C2029; background: #12151C;">
+        <h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #C6F135;">Never</h3>
+        <ul style="margin: 0; padding-left: 20px; color: #C9CDD6; display: flex; flex-direction: column; gap: 8px;">
+          <li>No account, no e-mail, no phone number, no name.</li>
+          <li>No camera, no microphone, no contacts, no GPS tracking.</li>
+          <li>No advertising, no third-party analytics SDKs, no selling of data.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 0 32px 96px; display: flex; flex-direction: column; gap: 28px;">
+    <h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 30px; line-height: 1.12;">Questions people ask</h2>
+    <div class="g2" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 40px;">
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #1C2029;"><h3 style="margin: 0; font-size: 17px; font-weight: 600;">Do I need to create an account?</h3><p style="margin: 0; color: #A3A8B5; font-size: 15px;">No. Download the app and you are ready. There is nothing to sign up for and nothing to delete afterwards.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #1C2029;"><h3 style="margin: 0; font-size: 17px; font-weight: 600;">Which phones work?</h3><p style="margin: 0; color: #A3A8B5; font-size: 15px;">Any iPhone or Android phone with Bluetooth. Exact minimum OS versions are listed on each store page.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #1C2029;"><h3 style="margin: 0; font-size: 17px; font-weight: 600;">Why does it ask for Bluetooth?</h3><p style="margin: 0; color: #A3A8B5; font-size: 15px;">Bluetooth is how your phone hears the beacons around the venue and works out its position. It is not used for anything else, and the signal never leaves your phone.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #1C2029;"><h3 style="margin: 0; font-size: 17px; font-weight: 600;">Does it drain my battery?</h3><p style="margin: 0; color: #A3A8B5; font-size: 15px;">Only while an effect is running — typically a few minutes per show. You can close the app the rest of the time.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #1C2029;"><h3 style="margin: 0; font-size: 17px; font-weight: 600;">I'm an organiser. What do I need?</h3><p style="margin: 0; color: #A3A8B5; font-size: 15px;">A REZOLQ beacon kit (up to six beacons) and a show controller. <a href="support.html">Contact us</a> and we will walk through your venue together.</p></div>
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #1C2029;"><h3 style="margin: 0; font-size: 17px; font-weight: 600;">Something isn't working.</h3><p style="margin: 0; color: #A3A8B5; font-size: 15px;">Check Bluetooth is on and the app has permission, then see the <a href="support.html">Support page</a> or write to us. We answer within two working days.</p></div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 0 32px 96px;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 48px; border-radius: 18px; background: #12151C; border: 1px solid #2A2F3A;">
+      <div style="display: flex; flex-direction: column; gap: 8px; flex: 1 1 400px; min-width: 0;">
+        <h2 style="margin: 0; font-family: Unbounded, sans-serif; font-weight: 700; font-size: 30px; line-height: 1.12;">Be a pixel at the next show.</h2>
+        <p style="margin: 0; color: #A3A8B5;">Coming soon to the App Store and Google Play. Free.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+        <a class="btn-primary" href="#" aria-label="REZOLQ for iPhone, coming soon to the App Store" style="background: #22D3EE; display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; font-weight: 600; font-size: 16px;">iPhone · coming soon</a>
+        <a class="btn-ghost" href="#" aria-label="REZOLQ for Android, coming soon to Google Play" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; font-weight: 600; font-size: 16px;">Android · coming soon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot" style="border-top: 1px solid #1C2029; margin-top: auto;">
+    <div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 40px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; color: #A3A8B5;">
+      <div style="display: flex; flex-direction: column; gap: 8px; flex: 1 1 280px; min-width: 0;">
+        <span style="font-family: Unbounded, sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 0.18em; color: #F4F6FA;">REZOLQ</span>
+        <span>© 2026 [LEGAL ENTITY]. All rights reserved.</span>
+        <span>[ADDRESS, CITY, COUNTRY] · VAT/Org. no. [NUMBER]</span>
+        <span>Apple, the Apple logo, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play and Android are trademarks of Google LLC.</span>
+      </div>
+      <nav aria-label="Legal" style="display: flex; flex-wrap: wrap; gap: 24px; align-content: flex-start;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:pascal.mence@gmail.com">pascal.mence@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
