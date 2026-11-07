@@ -1,0 +1,56 @@
+name: Site monitor
+
+# Hourly check of https://rezolq.com. A failed run e-mails the repository owner.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Pages respond over HTTPS
+        run: |
+          set -eu
+          for p in "" privacy.html support.html terms.html legal.html .well-known/security.txt; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "https://rezolq.com/$p")
+            echo "$code /$p"
+            [ "$code" = "200" ] || { echo "::error::/$p returned $code"; exit 1; }
+          done
+
+      - name: HTTP redirects to HTTPS
+        run: |
+          set -eu
+          loc=$(curl -s -o /dev/null -w '%{redirect_url}' --max-time 20 "http://rezolq.com/")
+          echo "http://rezolq.com/ -> $loc"
+          case "$loc" in https://rezolq.com/*) ;; *) echo "::error::no HTTPS redirect"; exit 1;; esac
+
+      - name: Certificate valid for at least 14 more days
+        run: |
+          set -eu
+          end=$(echo | openssl s_client -servername rezolq.com -connect rezolq.com:443 2>/dev/null | openssl x509 -noout -enddate | cut -d= -f2)
+          left=$(( ( $(date -d "$end" +%s) - $(date +%s) ) / 86400 ))
+          echo "Certificate expires $end ($left days left)"
+          [ "$left" -ge 14 ] || { echo "::error::certificate expires in $left days"; exit 1; }
+
+      - name: Legal notice still complete
+        run: |
+          set -eu
+          page=$(curl -s --max-time 20 "https://rezolq.com/legal.html")
+          for s in "FOXTROTT" "890 758 436" "FR10890758436" "tel:+596696233443" "GitHub, Inc."; do
+            echo "$page" | grep -q "$s" || { echo "::error::legal.html is missing: $s"; exit 1; }
+          done
+          echo "Legal notice OK"
+
+      - name: security.txt not expired
+        run: |
+          set -eu
+          exp=$(curl -s --max-time 20 "https://rezolq.com/.well-known/security.txt" | sed -n 's/^Expires: //p')
+          left=$(( ( $(date -d "$exp" +%s) - $(date +%s) ) / 86400 ))
+          echo "security.txt expires $exp ($left days left)"
+          [ "$left" -ge 30 ] || { echo "::error::security.txt expires in $left days"; exit 1; }
