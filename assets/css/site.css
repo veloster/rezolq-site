@@ -178,7 +178,9 @@ main { padding-top: var(--nav-h); }
 }
 @media (max-width: 600px) {
   .cards-3, .cards-2, .features { grid-template-columns: minmax(0, 1fr); }
-  .actions .btn { width: 100%; }
+  .actions { gap: 8px; }
+  .actions .btn { min-height: 44px; padding: 0 16px; font-size: 14px; }
+  .btn-soon small { margin-left: 5px; }
   .rule { gap: 14px; }
 }
 @media (prefers-reduced-motion: no-preference) {
