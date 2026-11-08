@@ -1,60 +1,65 @@
 <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 7 November 2026 · Effective: 7 November 2026 · Applies to the REZOLQ app for iOS and Android and to this website.</p>
+    <p class="meta">Last updated: 8 November 2026 · Effective: 8 November 2026 · Applies to the REZOLQ app for iOS and Android and to this website.</p>
 
     <div class="note">
-      <p><strong>In short:</strong> REZOLQ does not ask you to create an account and collects no personal information about you, apart from technical connection logs (IP address and time) kept for 30 days at most. During a show, the app uses Bluetooth to place your screen in the picture. That happens on your phone. That processing happens on your phone. We do not use advertising or third-party analytics SDKs, and we do not sell data.</p>
+      <p><strong>In short:</strong> REZOLQ has no accounts. During a show, the app and our show server use Bluetooth signals (and UWB on compatible phones) to work out where your screen is in the crowd; this data is linked only to a random show number, not to your identity, and is deleted within minutes. Your e-mail address is collected only if you choose to give it at the end of a show. We do not use advertising or third-party analytics SDKs, and we do not sell data.</p>
     </div>
 
     <h2>1. Who we are</h2>
-    <p>The REZOLQ app and this website are operated by <strong>FOXTROTT SAS</strong>, a French simplified joint-stock company with a share capital of €1,000, registered office Chemin Belvédère, Bois Thibault, 97234 Fort-de-France, Martinique, France, SIREN 890 758 436 ("we", "us"). We are the data controller for the personal data described in this policy. Full company details are in the <a href="/legal.html">Legal notice</a>.</p>
+    <p>The REZOLQ app and this website are operated by <strong>FOXTROTT SAS</strong>, a French simplified joint-stock company with a share capital of €1,000, registered office Chemin Belvédère, Bois Thibault, 97234 Fort-de-France, Martinique, France, SIREN 890 758 436 ("we", "us"). We are the data controller for the personal data described in this policy. For a show's e-mail sign-ups, that show's organiser (whose name is shown on the end screen) is also responsible for the list it receives. Full company details are in the <a href="/legal.html">Legal notice</a>.</p>
     <p>Contact for privacy matters: <a href="mailto:contact@rezolq.com">contact@rezolq.com</a>.</p>
 
     <h2>2. What the app does</h2>
-    <p>REZOLQ turns the phones of an audience into a synchronised light display during an event. To show the right colour on your screen at the right moment, the app uses Bluetooth at the venue during the show.</p>
+    <p>REZOLQ turns the phones of an audience into a synchronised light display during an event. To show the right colour on your screen at the right moment, the app works out where your phone is in the crowd during the show.</p>
 
     <h2>3. Data we process</h2>
     <table>
       <thead><tr><th scope="col">Data</th><th scope="col">Why</th><th scope="col">Where it is processed</th><th scope="col">Kept</th></tr></thead>
       <tbody>
-        <tr><td>Bluetooth signals received at the venue during the show</td><td>To show the right colour at your place in the picture</td><td>On your phone only</td><td>Not stored; discarded when the effect ends</td></tr>
-        <tr><td>Your place in the picture (not a GPS location)</td><td>To assign your screen a pixel of the picture</td><td>On your phone only — never transmitted</td><td>Not stored; discarded when the effect ends</td></tr>
-        <tr><td>Show cues sent to the app during the show</td><td>To change your screen colour in sync with the show</td><td>Received by your phone over the internet or local network</td><td>Not stored</td></tr>
-        <tr><td>Connection data (IP address, time of connection) when your phone receives the show cues</td><td>To deliver the show to your phone</td><td>Our show server, hosted by Fly.io, Inc. (United States)</td><td>Server logs deleted after 30 days</td></tr>
+        <tr><td>Random show number given by our server (not linked to your identity; renewed every 12 hours in the app)</td><td>To recognise your phone when it reconnects, protect the show against abuse and count the audience</td><td>Your phone and our show server</td><td>During the show, and in the show report (used only to count unique phones) until the organiser resets it</td></tr>
+        <tr><td>Bluetooth signals of nearby REZOLQ phones and venue beacons (their show number and signal strength); on compatible phones, UWB distances to nearby REZOLQ phones</td><td>To work out where your phone is in the crowd</td><td>Our show server</td><td>Bluetooth: 3 minutes. UWB: 10 minutes</td></tr>
+        <tr><td>Your place in the crowd (for example "left, middle"; not a GPS location)</td><td>To light your screen at the right moment so the crowd forms a picture</td><td>Our show server</td><td>During the show only</td></tr>
+        <tr><td>Aggregate statistics (crowd heat map, attendance curve)</td><td>Show report for the organiser; not linked to any phone</td><td>Our show server</td><td>Until the organiser resets the report</td></tr>
+        <tr><td>E-mail address — only if you choose to give it at the end of a show, with one unticked box per sender (organiser; partner if there is one)</td><td>News of the organiser's next events and, if you ticked its box, offers from its partner</td><td>Our show server; passed to the organiser (and to the partner if you ticked its box)</td><td>Deleted automatically 1 year after sign-up, or earlier on request</td></tr>
+        <tr><td>IP address</td><td>To protect the show server against abuse</td><td>Our show server, hosted by Fly.io, Inc. on servers in Stockholm, Sweden</td><td>In memory; written to the server log only after a wrong console or beacon key, and kept for the hosting provider's log retention period</td></tr>
         <tr><td>Visits to this website: IP address, time, page requested, browser type</td><td>To deliver the website and protect it against abuse</td><td>GitHub Pages, operated by GitHub, Inc. (United States). GitHub logs the IP address of every visitor for security purposes.</td><td>We have no access to these logs and keep no copy. GitHub does not publish a fixed duration: it states that it keeps personal data for as long as needed for its contractual obligations, legal requirements, dispute resolution and enforcement of its agreements, and that the duration depends on the purpose and on its legal obligations (GitHub Privacy Statement, "Security and Retention").</td></tr>
         <tr><td>Basic technical data (app version, operating system, crash reports)</td><td>To keep the app working and fix bugs</td><td>Apple / Google platform crash reporting, only if you have enabled sharing with app developers in your device settings</td><td>As provided by Apple / Google</td></tr>
       </tbody>
     </table>
-    <p>We do <strong>not</strong> collect your name, e-mail address, phone number, contacts, photos, precise GPS location, microphone or camera data, advertising identifiers, or any payment information.</p>
+    <p>Our hosting provider keeps a copy of the server disk for 5 days, so deleted data also disappears from backups within 5 days.</p>
+    <p>We do <strong>not</strong> collect your name, phone number, contacts, photos, precise GPS location, microphone recordings, camera images, advertising identifiers, or any payment information. Your e-mail address is collected only if you give it at the end of a show.</p>
 
-    <p><strong>Is providing data required?</strong> No. You never have to give us personal information to use REZOLQ. Granting Bluetooth access is voluntary; without it the app cannot place you in the crowd and only shows a solid colour.</p>
+    <p><strong>Is providing data required?</strong> Only the random show number is needed to take part. Granting Bluetooth access is voluntary; without it the app still follows the show, without precise placement. Giving your e-mail address is always optional.</p>
 
     <h2>4. Permissions the app asks for</h2>
     <ul>
-      <li><strong>Bluetooth</strong> (iOS: "Bluetooth"; Android: "Nearby devices") — needed during the show so your screen shows the right colour at the right place. On iPhone the app does not ask for Location access. You can revoke it at any time in your phone’s settings; the app will then only show a solid colour.</li>
-      <li><strong>Location (Android only, older versions)</strong> — on some Android versions the system requires Location permission for any app that uses Bluetooth. REZOLQ does not read or store your GPS position.</li>
-      <li><strong>Network</strong> — to receive effect cues during a show.</li>
+      <li><strong>Bluetooth</strong> (iOS: "Bluetooth"; Android: "Nearby devices") — used during the show to work out your place in the crowd. You can revoke it at any time in your phone’s settings.</li>
+      <li><strong>Location (Android)</strong> — Android treats Bluetooth placement as location, so the app asks for it. It is used only to work out your place in the venue while the app is open. REZOLQ never reads your GPS position.</li>
+      <li><strong>Nearby Interaction / UWB</strong> (compatible iPhones and Android phones) — for more precise placement.</li>
+      <li><strong>Camera</strong> (iPhone) — only to switch on the flashlight in time with the show. Nothing is filmed or recorded.</li>
+      <li><strong>Network</strong> — to receive the show during the event.</li>
     </ul>
 
     <h2>5. Legal basis (EU/EEA users)</h2>
-    <p>Where the GDPR applies, we process the technical data above on the basis of our legitimate interests (Art. 6(1)(f) GDPR): running the light show you have chosen to take part in, and keeping this website and the cue server secure and available. You can ask us for our assessment of these interests at any time. Bluetooth scanning only starts after you grant the permission on your device.</p>
+    <p>Where the GDPR applies: show data (show number, Bluetooth, UWB, place) is necessary to provide the show you choose to join (Art. 6(1)(b) GDPR); abuse protection and website and server logs (IP address) rely on our legitimate interest in keeping the service safe and available (Art. 6(1)(f)); your e-mail address relies on your consent (Art. 6(1)(a)), which you can withdraw at any time with the unsubscribe link in every e-mail or by writing to us, without affecting what was done before.</p>
 
     <h2>6. Sharing</h2>
-    <p>We do not sell or rent data. We do not share data with advertisers or data brokers. Your position in the crowd never leaves your phone, so neither we nor the event organiser receive it. Our show server is hosted by Fly.io, Inc. in the United States, which processes connection data on our behalf. Fly.io states that it takes part in the EU-U.S. Data Privacy Framework (<a href="https://fly.io/legal/data-privacy-framework/">Fly.io Data Privacy Framework Privacy Policy</a>), which covers transfers from the EEA. This website is hosted on GitHub Pages by GitHub, Inc. in the United States, which receives the IP address of every visitor. GitHub states in its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a> that it takes part in the EU-US Data Privacy Framework and relies on the European Commission’s standard contractual clauses (Decision 2021/914) for transfers from the EEA. The website loads no other third-party resources: fonts are hosted on rezolq.com itself, and there are no cookies, analytics or advertising tags. Apple and Google may process crash and diagnostic data under their own privacy policies if you have enabled that on your device.</p>
+    <p>We do not sell or rent data. We do not share data with advertisers or data brokers. E-mail addresses are passed only to the show's organiser and, if you ticked its box, to its partner. The organiser receives only aggregate crowd statistics, never your individual position. Our show server is hosted by Fly.io, Inc. (USA), as our processor, on servers in Stockholm, Sweden; as Fly.io is a US company, its staff may access the servers from the United States. Fly.io states that it takes part in the EU-U.S. Data Privacy Framework (<a href="https://fly.io/legal/data-privacy-framework/">Fly.io Data Privacy Framework Privacy Policy</a>). This website is hosted on GitHub Pages by GitHub, Inc. in the United States, which receives the IP address of every visitor. GitHub states in its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a> that it takes part in the EU-US Data Privacy Framework and relies on the European Commission’s standard contractual clauses (Decision 2021/914) for transfers from the EEA. The website loads no other third-party resources: fonts are hosted on rezolq.com itself, and there are no cookies, analytics or advertising tags. Apple and Google may process crash and diagnostic data under their own privacy policies if you have enabled that on your device.</p>
 
     <h2>7. Retention</h2>
-    <p>Bluetooth signals and your position in the picture exist only while a show moment is running and are discarded afterwards. Technical connection logs (IP address and time) on our show server are deleted after 30 days at most. We keep no database of participants.</p>
+    <p>Bluetooth data is deleted after 3 minutes and UWB data after 10 minutes; your place in the crowd exists only during the show. Show numbers in the show report are kept until the organiser resets it. E-mail sign-ups are deleted automatically 1 year after sign-up. Server backups are kept for 5 days.</p>
 
     <h2>8. Your rights</h2>
-    <p>Depending on where you live, you have the right to access, correct and delete your personal data, to restrict its processing, to receive it in a portable format (data portability), to object to processing based on our legitimate interests, and to lodge a complaint with the data protection authority where you live, work or where the issue happened (in France: CNIL, cnil.fr; in Norway: Datatilsynet, datatilsynet.no). Because REZOLQ holds no personal data about you apart from technical logs kept for 30 days at most, there is usually nothing for us to retrieve or delete — but you can always write to <a href="mailto:contact@rezolq.com">contact@rezolq.com</a> and we will answer within 30 days.</p>
+    <p>Depending on where you live, you have the right to access, correct and delete your personal data, to restrict its processing, to receive it in a portable format (data portability), to object to processing based on our legitimate interests, to withdraw your consent, and to lodge a complaint with the data protection authority where you live, work or where the issue happened (in France: CNIL, cnil.fr; in Norway: Datatilsynet, datatilsynet.no). If you signed up by e-mail, we can find, export or delete your sign-up; other data is linked only to a random show number and deletes itself within minutes. Write to <a href="mailto:contact@rezolq.com">contact@rezolq.com</a> and we will answer within 30 days.</p>
 
     <h2>9. Account deletion</h2>
-    <p>REZOLQ has no accounts, so there is nothing to delete. Uninstalling the app removes everything it stored on your phone.</p>
+    <p>REZOLQ has no accounts, so there is nothing to delete. Uninstalling the app removes everything it stored on your phone. To delete an e-mail sign-up, use the unsubscribe link in any e-mail or write to us.</p>
 
     <h2>10. Children</h2>
-    <p>The app is suitable for all ages and does not knowingly collect personal data from anyone, including children under 13 (or the age set by local law).</p>
+    <p>REZOLQ is not directed at children under 13 (or the age set by local law) and does not knowingly ask them for personal data.</p>
 
     <h2>11. Security</h2>
-    <p>Communication between the app and our servers is encrypted in transit. Apart from technical logs kept for 30 days at most, we store no personal data.</p>
+    <p>Communication between the app and our servers is encrypted in transit (HTTPS). The Bluetooth broadcast contains only the random show number and is not encrypted.</p>
 
     <h2>12. Changes to this policy</h2>
     <p>If the app starts processing new categories of data, we will update this page, change the date at the top, and update the privacy details shown on the App Store and Google Play before the change takes effect.</p>
