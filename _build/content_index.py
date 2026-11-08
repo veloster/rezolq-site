@@ -17,8 +17,8 @@ FAQ = [
     ('When do I open the app?', 'Only when the show asks you to. The artist or the screens will give the signal — open REZOLQ, raise your phone, and you’re part of the picture.'),
     ('Will it drain my battery?', 'Barely. The app only runs during the moment itself, usually a few minutes. Close it the rest of the time.'),
     ('Do I need a connection?', 'Yes, mobile data or Wi-Fi during the show. Download the app before you arrive: networks get busy when thousands of people are in the same place.'),
-    ('Why does it ask for Bluetooth?', 'So your screen shows the right colour at the right place in the picture. It is used for nothing else. More in our <a href="/privacy.html">Privacy Policy</a>.'),
-    ('I’m sensitive to flashing lights.', 'Some moments use flashing colours. If flashing lights affect you, keep the app closed and look away from the screens around you during those moments.'),
+    ('Why does it ask for Bluetooth?', 'So your screen shows the right colour at the right place in the picture, and so the show still reaches you if the network is busy. More in our <a href="/privacy.html">Privacy Policy</a>.'),
+    ('I’m sensitive to flashing lights.', 'Some moments use flashing colours. Turn on gentle mode on the app’s start screen: flashes become soft changes and the flashlight stays off. If flashing lights affect you, also look away from the screens around you.'),
     ('Something isn’t working.', 'See the <a href="/support.html">Support page</a> or write to us. We answer within two working days.'),
 ]
 
@@ -44,7 +44,7 @@ def build(rule):
       <article class="card reveal"><span class="ico">{ICON['star']}</span><h3>You’re part of the picture</h3><p>Your screen joins thousands of others to draw shapes, waves and images across the whole crowd. Without you, there’s a gap.</p></article>
       <article class="card reveal"><span class="ico">{ICON['camera']}</span><h3>A moment you’ll want to film</h3><p>Seen from the stage or from the stands, the crowd becomes one giant screen. It’s the shot everyone posts after the show.</p></article>
       <article class="card reveal"><span class="ico">{ICON['tap']}</span><h3>Nothing to set up</h3><p>Open the app when the show asks, raise your phone. That’s it — your screen knows what to do.</p></article>
-      <article class="card reveal"><span class="ico">{ICON['shield']}</span><h3>Free, no account, no ads</h3><p>No sign-up, no personal details asked, nothing sold. The app only wakes up for the moment itself.</p></article>
+      <article class="card reveal"><span class="ico">{ICON['shield']}</span><h3>Free, no account, no ads</h3><p>No sign-up, nothing sold. Your e-mail is only asked if you choose to sign up for news at the end of a show. The app only wakes up for the moment itself.</p></article>
     </div>
   </div>
 </section>
